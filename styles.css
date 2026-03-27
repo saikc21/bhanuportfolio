@@ -18,6 +18,11 @@
 
   --gradient-primary: linear-gradient(135deg, #6366f1, #06b6d4);
   --gradient-hero:    linear-gradient(135deg, rgba(99,102,241,0.15), rgba(6,182,212,0.08));
+  --hero-max-width:   1200px;
+  --hero-layout-left: 3fr;
+  --hero-layout-right: 2fr;
+  --hero-gap:         42px;
+  --font-size-chip:   0.78rem;
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'Fira Code', 'Courier New', monospace;
@@ -313,8 +318,74 @@ h1,h2,h3,h4 {
 .hero__content {
   position: relative;
   z-index: 1;
-  max-width: 800px;
+  max-width: var(--hero-max-width);
   padding: 80px 24px;
+}
+
+.hero__layout {
+  display: grid;
+  grid-template-columns: var(--hero-layout-left) var(--hero-layout-right);
+  gap: var(--hero-gap);
+  align-items: center;
+}
+
+.hero__left {
+  min-width: 0;
+}
+
+.hero__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__profile-card {
+  width: min(360px, 100%);
+  background: rgba(17, 24, 39, 0.62);
+  border: 1px solid rgba(129, 140, 248, 0.28);
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  padding: 34px 28px;
+  text-align: center;
+}
+
+.hero__profile-avatar {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--clr-white);
+  background: var(--gradient-primary);
+  box-shadow: 0 10px 28px rgba(99, 102, 241, 0.35);
+}
+
+.hero__profile-role {
+  color: var(--clr-white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.hero__profile-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hero__profile-skills span {
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(99,102,241,0.12);
+  border: 1px solid rgba(99,102,241,0.25);
+  color: var(--clr-primary-h);
+  font-size: var(--font-size-chip);
+  font-family: var(--font-mono);
 }
 
 .hero__eyebrow {
@@ -1266,6 +1337,8 @@ h1,h2,h3,h4 {
    RESPONSIVE
    ========================================= */
 @media (max-width: 1024px) {
+  .hero__layout { grid-template-columns: 1fr; }
+  .hero__visual { order: -1; }
   .about__grid { grid-template-columns: 1fr; gap: 40px; }
   .about__image-wrap { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 20px; }
   .contact__grid { grid-template-columns: 1fr; gap: 36px; }
@@ -1294,6 +1367,7 @@ h1,h2,h3,h4 {
   .nav__toggle { display: flex; }
 
   .hero__cta { flex-direction: column; align-items: flex-start; }
+  .hero__profile-card { max-width: 320px; margin: 0 auto; }
   .hero__eyebrow { font-size: 0.72rem; letter-spacing: 0.06em; }
   .about__stats { grid-template-columns: repeat(3,1fr); }
   .form-row { grid-template-columns: 1fr; }
