@@ -81,11 +81,12 @@ $$('.reveal-up, .reveal-left, .reveal-right').forEach(el => revealObserver.obser
    ========================================= */
 const typedEl  = $('#typed');
 const phrases  = [
-  'web applications.',
-  'scalable APIs.',
-  'beautiful UIs.',
-  'cloud solutions.',
-  'open-source tools.',
+  'React Native experiences.',
+  'FastAPI backends.',
+  'Dockerized deployments.',
+  'SQL Server optimizations.',
+  'Azure Blob workflows.',
+  'ML-powered insights.',
 ];
 let phraseIndex = 0;
 let charIndex   = 0;
