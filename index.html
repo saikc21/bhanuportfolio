@@ -3,578 +3,235 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bhanu Charan K – Full-Stack Developer & Software Engineer. Professional portfolio showcasing projects, skills, and experience." />
-  <meta name="keywords" content="Bhanu Charan, Full-Stack Developer, Software Engineer, Portfolio" />
-  <meta property="og:title" content="Bhanu Charan K | Developer Portfolio" />
-  <meta property="og:description" content="Full-Stack Developer passionate about building scalable, beautiful web experiences." />
-  <meta property="og:url" content="https://bhanucharank.dev" />
-  <meta property="og:type" content="website" />
-  <title>Bhanu Charan K | Developer Portfolio</title>
+  <meta name="description" content="Bhanu Charan K personal developer portfolio." />
+  <title>Bhanu Charan K | Portfolio</title>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="logo">Bhanu Charan</a>
 
-  <!-- ===== NAVIGATION ===== -->
-  <header id="header">
-    <nav class="nav container">
-      <a href="#home" class="nav__logo">
-        <span class="logo-bracket">&lt;</span>BK<span class="logo-bracket">/&gt;</span>
-      </a>
-
-      <ul class="nav__list" id="nav-list">
-        <li><a href="#home"   class="nav__link active">Home</a></li>
-        <li><a href="#projects" class="nav__link">Projects</a></li>
-        <li><a href="#skills" class="nav__link">Skills</a></li>
-        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
-      </ul>
-
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contacts</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
+    <section id="home" class="hero section-tight">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-greeting">Hello<span>.</span></p>
+          <h1>I’m Bhanu Charan</h1>
+          <h2>Software Developer</h2>
 
-    <!-- ===== HERO ===== -->
-    <section id="home" class="hero">
-      <div class="hero__bg-grid"></div>
-      <div class="hero__orb hero__orb--1"></div>
-      <div class="hero__orb hero__orb--2"></div>
-
-      <div class="container hero__content">
-        <div class="hero__layout">
-          <div class="hero__left">
-            <p class="hero__greeting reveal-up">Hello, I'm</p>
-            <h1 class="hero__name reveal-up delay-1">Bhanu Charan K</h1>
-            <h2 class="hero__role reveal-up delay-2">
-              <span class="role-prefix">I build&nbsp;</span>
-              <span class="typed-text" id="typed"></span><span class="cursor">|</span>
-            </h2>
-            <p class="hero__tagline reveal-up delay-3">
-              Full Stack Software Engineer building scalable, cross-platform products with React Native,
-              FastAPI, and high-performance data layers.
-            </p>
-
-            <div class="hero__cta reveal-up delay-4">
-              <a href="#projects" class="btn btn--primary">View Projects</a>
-              <a href="#contact"  class="btn btn--outline">Get In Touch</a>
-            </div>
-
-            <div class="hero__social reveal-up delay-5">
-              <a href="https://github.com/bhanukc21"   target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-              <a href="https://linkedin.com/in/bhanucharankodimala" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="mailto:bhanucharankodimala@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-          </div>
-
-          <div class="hero__visual reveal-right delay-2" aria-hidden="true">
-            <div class="hero__profile-card">
-              <div class="hero__profile-avatar">BK</div>
-              <p class="hero__profile-role">Full Stack Developer</p>
-              <div class="hero__profile-skills">
-                <span>React</span><span>FastAPI</span><span>Docker</span>
-              </div>
-            </div>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Got a project?</a>
+            <a href="./BhanuCharan_Kodimala_Resume.pdf" class="btn btn-outline" download="BhanuCharan_Kodimala_Resume.pdf">My resume</a>
           </div>
         </div>
-      </div>
 
-      <div class="hero__scroll-indicator">
-        <span>Scroll down</span>
-        <div class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
-      </div>
-    </section>
-
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="section about">
-      <div class="container">
-        <div class="section__header reveal-up">
-          <span class="section__tag">01. About Me</span>
-          <h2 class="section__title">Who I Am</h2>
-        </div>
-
-        <div class="about__grid">
-          <div class="about__image-wrap reveal-left">
-            <div class="about__image-frame">
-              <div class="about__avatar">
-                <span>BK</span>
-              </div>
-              <div class="about__image-decoration"></div>
-            </div>
-
-            <div class="about__stats">
-              <div class="stat-card">
-                <span class="stat-card__number" data-count="1">0</span><span class="stat-card__plus">+</span>
-                <span class="stat-card__label">Years Experience</span>
-              </div>
-              <div class="stat-card">
-                <span class="stat-card__number" data-count="4">0</span><span class="stat-card__plus">+</span>
-                <span class="stat-card__label">Major Projects</span>
-              </div>
-              <div class="stat-card">
-                <span class="stat-card__number" data-count="10000">0</span><span class="stat-card__plus">+</span>
-                <span class="stat-card__label">Users Served (Appointment App)</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="about__text reveal-right">
-            <p>
-              Hi! I'm <strong>Bhanu Charan K</strong>, a Full Stack Software Engineer with 1+ year of experience
-              building scalable, cross-platform apps using React Native and FastAPI. I love pairing clean UX with
-              reliable back-end systems that stay fast under load.
-            </p>
-            <p>
-              Recently, I've been optimizing REST APIs and SQL Server queries for products serving 10,000+ users,
-              containerizing services with Docker, and integrating Azure Blob Storage for secure data flows.
-              I thrive in remote, Agile teams where close collaboration leads to impactful releases.
-            </p>
-            <p>
-              When I'm not shipping features, I'm experimenting with NLP models, refining deployment pipelines,
-              or leveling up mobile experiences with native integrations like maps, push notifications, and camera workflows.
-            </p>
-
-            <ul class="about__highlights">
-              <li><i class="fa-solid fa-circle-check"></i> React Native + FastAPI builds with reusable, responsive components</li>
-              <li><i class="fa-solid fa-circle-check"></i> API &amp; SQL performance tuning for high-traffic systems</li>
-              <li><i class="fa-solid fa-circle-check"></i> Dockerized deployments with Azure Blob Storage integrations</li>
-              <li><i class="fa-solid fa-circle-check"></i> Collaborative Agile workflows and user-first product thinking</li>
-            </ul>
-
-            <a href="./BhanuCharan_Kodimala_Resume.pdf" class="btn btn--primary btn--sm" download="BhanuCharan_Kodimala_Resume.pdf">
-              <i class="fa-solid fa-download"></i>&nbsp; Download Résumé
-            </a>
-          </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-glow"></div>
+          <div class="hero-ring"></div>
+          <img src="https://github.com/user-attachments/assets/47250c26-4c17-4f3b-8721-ab074b749eb0" alt="Bhanu Charan" class="hero-image" />
         </div>
       </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
-    <section id="skills" class="section skills">
-      <div class="container">
-        <div class="section__header reveal-up">
-          <span class="section__tag">02. Skills</span>
-          <h2 class="section__title">Technical Toolkit</h2>
-        </div>
-
-        <div class="skills__categories">
-
-          <div class="skill-category reveal-up delay-1">
-            <h3 class="skill-category__title"><i class="fa-solid fa-mobile-screen-button"></i> Mobile &amp; Front-End</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">React Native</span>
-              <span class="skill-tag">ReactJS</span>
-              <span class="skill-tag">JavaScript (ES6+)</span>
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">Responsive UI</span>
-              <span class="skill-tag">Custom Animations</span>
-              <span class="skill-tag">Maps &amp; Camera Integrations</span>
-            </div>
-          </div>
-
-          <div class="skill-category reveal-up delay-2">
-            <h3 class="skill-category__title"><i class="fa-solid fa-server"></i> Back-End &amp; APIs</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">FastAPI</span>
-              <span class="skill-tag">Flask</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">SQLAlchemy</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">Role-Based Auth</span>
-              <span class="skill-tag">SQL Optimization</span>
-            </div>
-          </div>
-
-          <div class="skill-category reveal-up delay-3">
-            <h3 class="skill-category__title"><i class="fa-solid fa-cloud-arrow-up"></i> Cloud &amp; DevOps</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Azure Blob Storage</span>
-              <span class="skill-tag">SQL Server</span>
-              <span class="skill-tag">Git &amp; GitHub</span>
-              <span class="skill-tag">Linux</span>
-              <span class="skill-tag">CI/CD</span>
-              <span class="skill-tag">Android Studio</span>
-              <span class="skill-tag">VS Code</span>
-            </div>
-          </div>
-
-          <div class="skill-category reveal-up delay-4">
-            <h3 class="skill-category__title"><i class="fa-solid fa-brain"></i> Data &amp; ML</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">BART</span>
-              <span class="skill-tag">DBSCAN</span>
-              <span class="skill-tag">t-SNE</span>
-              <span class="skill-tag">NLTK</span>
-              <span class="skill-tag">Random Forest</span>
-              <span class="skill-tag">Scikit-learn</span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Proficiency bars -->
-        <div class="skills__bars reveal-up delay-2">
-          <h3 class="skills__bars-title">Core Proficiencies</h3>
-          <div class="skill-bar">
-            <div class="skill-bar__meta">
-              <span>React Native / ReactJS</span><span>90%</span>
-            </div>
-            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="90"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar__meta">
-              <span>FastAPI / Flask</span><span>88%</span>
-            </div>
-            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="88"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar__meta">
-              <span>SQL Server / SQLAlchemy</span><span>84%</span>
-            </div>
-            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="84"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar__meta">
-              <span>Docker &amp; DevOps</span><span>80%</span>
-            </div>
-            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar__meta">
-              <span>NLP &amp; ML Pipelines</span><span>72%</span>
-            </div>
-            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="72"></div></div>
-          </div>
-        </div>
+    <section class="skills-strip" aria-label="Skills">
+      <div class="container skills-row">
+        <span class="skill-pill">HTML5</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">Node.js</span>
+        <span class="skill-pill">React</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">GitHub</span>
       </div>
     </section>
 
-    <!-- ===== EXPERIENCE ===== -->
-    <section id="experience" class="section experience">
-      <div class="container">
-        <div class="section__header reveal-up">
-          <span class="section__tag">03. Experience</span>
-          <h2 class="section__title">Work History</h2>
-        </div>
-
-        <div class="timeline">
-
-          <div class="timeline__item reveal-left">
-            <div class="timeline__dot"></div>
-            <div class="timeline__card">
-              <div class="timeline__card-header">
-                <div>
-                  <h3 class="timeline__role">Software Engineer — Full Stack</h3>
-                  <p class="timeline__company"><i class="fa-solid fa-building"></i> TechRangers.in (Remote)</p>
-                </div>
-                <span class="timeline__period">Nov 2024 – Present</span>
-              </div>
-              <ul class="timeline__bullets">
-                <li>Built and optimized FastAPI-based REST APIs, cutting average response time by 30%.</li>
-                <li>Developed reusable, responsive React Native components with custom animations for Android &amp; iOS.</li>
-                <li>Integrated maps, push notifications, and camera workflows to boost user engagement across apps.</li>
-                <li>Designed and tuned SQL Server schemas/queries; implemented ORM models with SQLAlchemy.</li>
-                <li>Containerized services with Docker and collaborated across product teams to ship features faster.</li>
-              </ul>
-              <div class="timeline__tech">
-                <span>React Native</span><span>FastAPI</span><span>SQL Server</span><span>Docker</span><span>SQLAlchemy</span>
-              </div>
-            </div>
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="services-list">
+          <div class="service-item">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <p>Website Development</p>
           </div>
-
-          <div class="timeline__item reveal-right">
-            <div class="timeline__dot"></div>
-            <div class="timeline__card">
-              <div class="timeline__card-header">
-                <div>
-                  <h3 class="timeline__role">Technical Team Member</h3>
-                  <p class="timeline__company"><i class="fa-solid fa-building"></i> TechVision Club, SNIST</p>
-                </div>
-                <span class="timeline__period">Dec 2022 – Feb 2024</span>
-              </div>
-              <ul class="timeline__bullets">
-                <li>Organized and conducted technical workshops and fests for the student developer community.</li>
-                <li>Led cross-functional teams during events and hackathons, strengthening leadership and teamwork.</li>
-                <li>Promoted collaborative, hands-on learning by mentoring peers on modern development practices.</li>
-              </ul>
-              <div class="timeline__tech">
-                <span>Community</span><span>Workshops</span><span>Leadership</span>
-              </div>
-            </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <p>App Development</p>
           </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PROJECTS ===== -->
-    <section id="projects" class="section projects">
-      <div class="container">
-        <div class="section__header reveal-up">
-          <span class="section__tag">04. Projects</span>
-          <h2 class="section__title">Featured Work</h2>
-        </div>
-
-        <div class="projects__grid">
-
-          <article class="project-card reveal-up delay-1 project-card--featured">
-            <div class="project-card__featured-badge">Featured</div>
-              <div class="project-card__top">
-                <div class="project-card__icon"><i class="fa-solid fa-calendar-check"></i></div>
-                <div class="project-card__links">
-                  <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
-                  <a href="https://thetechrangers.com/appointment-booking" target="_blank" rel="noopener" aria-label="Appointment Booking App live site"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-              </div>
-            <h3 class="project-card__title">Appointment Booking App — thetechrangers.com</h3>
-            <p class="project-card__desc">
-              Scalable scheduling platform for government officials and hospitals serving 10,000+ active users, with
-              Dockerized FastAPI backend, centralized logging, and role-based authentication.
-            </p>
-            <div class="project-card__tech">
-              <span>React Native</span><span>FastAPI</span><span>SQL Server</span><span>Docker</span><span>Azure Blob Storage</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal-up delay-2">
-              <div class="project-card__top">
-                <div class="project-card__icon"><i class="fa-solid fa-users"></i></div>
-                <div class="project-card__links">
-                  <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
-                  <a href="https://thetechrangers.com/socializing-app" target="_blank" rel="noopener" aria-label="Socializing App live site"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-              </div>
-            <h3 class="project-card__title">Socializing App — thetechrangers.com</h3>
-            <p class="project-card__desc">
-              Cross-platform social networking app encouraging real-world interactions; achieved 500+ active beta users
-              with responsive React Native UI and Dockerized FastAPI APIs.
-            </p>
-            <div class="project-card__tech">
-              <span>React Native</span><span>FastAPI</span><span>Docker</span><span>SQL Server</span><span>Azure Blob Storage</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal-up delay-3">
-            <div class="project-card__top">
-              <div class="project-card__icon"><i class="fa-solid fa-chart-line"></i></div>
-              <div class="project-card__links">
-                <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
-                <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" aria-label="Project overview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-            <h3 class="project-card__title">S-TrAcE — Trend Analysis Web App</h3>
-            <p class="project-card__desc">
-              Machine learning web app for real-time trend analysis using BART-large-MNLI, DBSCAN clustering, and t-SNE
-              visualizations, built with Flask and Docker.
-            </p>
-            <div class="project-card__tech">
-              <span>Machine Learning</span><span>NLP</span><span>Flask</span><span>Python</span><span>Docker</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal-up delay-1">
-            <div class="project-card__top">
-              <div class="project-card__icon"><i class="fa-solid fa-seedling"></i></div>
-              <div class="project-card__links">
-                <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
-                <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" aria-label="Project overview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-            <h3 class="project-card__title">Farming in the Digital Age</h3>
-            <p class="project-card__desc">
-              IoT-based crop management system predicting soil nutrient levels (NPK) with a 97% accurate Random Forest
-              model and Flask-powered web experience for farmers.
-            </p>
-            <div class="project-card__tech">
-              <span>IoT</span><span>Flask</span><span>Machine Learning</span><span>Python</span>
-            </div>
-          </article>
-
-        </div>
-
-        <div class="projects__more reveal-up">
-          <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="btn btn--outline">
-            <i class="fa-brands fa-github"></i>&nbsp; See All on GitHub
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== EDUCATION ===== -->
-    <section id="education" class="section education">
-      <div class="container">
-        <div class="section__header reveal-up">
-          <span class="section__tag">05. Education</span>
-          <h2 class="section__title">Academic Background</h2>
-        </div>
-
-        <div class="education__grid">
-
-          <div class="edu-card reveal-up delay-1">
-            <div class="edu-card__icon"><i class="fa-solid fa-graduation-cap"></i></div>
-            <div class="edu-card__body">
-              <h3 class="edu-card__degree">B.Tech — Information Technology</h3>
-              <p class="edu-card__institution">Sreenidhi Institute of Science and Technology (SNIST)</p>
-              <p class="edu-card__period">Nov 2020 – Jun 2024</p>
-              <p class="edu-card__detail">CGPA: 7.82 / 10 · Focus: Full-stack development, databases, and software engineering.</p>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Certifications -->
-        <div class="certs reveal-up delay-3">
-          <h3 class="certs__title">Certifications &amp; Achievements</h3>
-          <div class="certs__grid">
-            <div class="cert-badge">
-              <i class="fa-solid fa-mobile-screen"></i>
-              <span>React Native (Udemy)</span>
-            </div>
-            <div class="cert-badge">
-              <i class="fa-solid fa-code"></i>
-              <span>ReactJS (Udemy)</span>
-            </div>
-            <div class="cert-badge">
-              <i class="fa-solid fa-terminal"></i>
-              <span>Command Line in Linux</span>
-            </div>
-            <div class="cert-badge">
-              <i class="fa-solid fa-database"></i>
-              <span>SQL (HackerRank)</span>
-            </div>
-            <div class="cert-badge">
-              <i class="fa-brands fa-python"></i>
-              <span>Python</span>
-            </div>
-            <div class="cert-badge">
-              <i class="fa-solid fa-palette"></i>
-              <span>CSS (HackerRank)</span>
-            </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <p>Website Hosting</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section contact">
-      <div class="container">
-        <div class="section__header reveal-up">
-          <span class="section__tag">06. Contact</span>
-          <h2 class="section__title">Let's Work Together</h2>
-          <p class="section__subtitle">
-            Have a project in mind or want to chat? I'd love to hear from you.
-            Drop a message below or reach out directly.
+        <div class="about-content">
+          <h2 class="section-title">About me</h2>
+          <p>
+            I started my software journey from curiosity and problem-solving. Over the years, I’ve built reliable web and
+            mobile products with clean UI and scalable backend architecture. I enjoy turning ideas into polished digital
+            experiences.
           </p>
-        </div>
 
-        <div class="contact__grid">
-
-          <div class="contact__info reveal-left">
-            <a href="mailto:bhanucharankodimala@gmail.com" class="contact-item">
-              <div class="contact-item__icon"><i class="fa-solid fa-envelope"></i></div>
-              <div>
-                <span class="contact-item__label">Email</span>
-                <span class="contact-item__value">bhanucharankodimala@gmail.com</span>
-              </div>
-            </a>
-            <a href="tel:+919347264192" class="contact-item">
-              <div class="contact-item__icon"><i class="fa-solid fa-phone"></i></div>
-              <div>
-                <span class="contact-item__label">Phone</span>
-                <span class="contact-item__value">+91 93472 64192</span>
-              </div>
-            </a>
-            <a href="https://linkedin.com/in/bhanucharankodimala" target="_blank" rel="noopener" class="contact-item">
-              <div class="contact-item__icon"><i class="fa-brands fa-linkedin"></i></div>
-              <div>
-                <span class="contact-item__label">LinkedIn</span>
-                <span class="contact-item__value">linkedin.com/in/bhanucharankodimala</span>
-              </div>
-            </a>
-            <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="contact-item">
-              <div class="contact-item__icon"><i class="fa-brands fa-github"></i></div>
-              <div>
-                <span class="contact-item__label">GitHub</span>
-                <span class="contact-item__value">github.com/bhanukc21</span>
-              </div>
-            </a>
-            <div class="contact-item contact-item--no-link">
-              <div class="contact-item__icon"><i class="fa-solid fa-location-dot"></i></div>
-              <div>
-                <span class="contact-item__label">Location</span>
-                <span class="contact-item__value">Hyderabad, Telangana, India</span>
-              </div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <p class="stat-value">120<span>+</span></p>
+              <p class="stat-label">Completed Projects</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">95<span>%</span></p>
+              <p class="stat-label">Client Satisfaction</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">10<span>+</span></p>
+              <p class="stat-label">Years of Experience</p>
             </div>
           </div>
-
-          <form class="contact__form reveal-right" id="contact-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name <span>*</span></label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required />
-                <span class="form-error" id="name-error"></span>
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address <span>*</span></label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required />
-                <span class="form-error" id="email-error"></span>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject <span>*</span></label>
-              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
-              <span class="form-error" id="subject-error"></span>
-            </div>
-            <div class="form-group">
-              <label for="message">Message <span>*</span></label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-              <span class="form-error" id="message-error"></span>
-            </div>
-            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
-              <span class="btn-text"><i class="fa-solid fa-paper-plane"></i>&nbsp; Send Message</span>
-              <span class="btn-loading" hidden><i class="fa-solid fa-spinner fa-spin"></i>&nbsp; Sending…</span>
-            </button>
-            <div class="form-success" id="form-success" hidden>
-              <i class="fa-solid fa-circle-check"></i> Thanks! I'll get back to you soon.
-            </div>
-          </form>
-
         </div>
       </div>
     </section>
 
+    <section id="projects" class="section section-projects">
+      <div class="container">
+        <h2 class="section-title section-title-centered">Projects</h2>
+
+        <article class="project-row">
+          <div class="project-content">
+            <h3>Battleship</h3>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span>
+            </div>
+            <p>
+              Turn-based terminal battleship game built using JavaScript logic and data structures to track ships,
+              attacks, and game state.
+            </p>
+            <div class="project-actions">
+              <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View GitHub</a>
+              <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="btn-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="preview-window code-window">Hit!\nEnter a location to strike i.e., A2\nMiss!\nYou sunk a Cruiser.</div>
+          </div>
+        </article>
+
+        <article class="project-row reverse">
+          <div class="project-content">
+            <h3>Movie Titles API</h3>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+            </div>
+            <p>
+              Movie collection manager that fetches public API data, groups titles by genre, and supports favorite lists
+              with intuitive filtering.
+            </p>
+            <div class="project-actions">
+              <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View GitHub</a>
+              <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="btn-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="preview-window image-window">Movie Posters Preview</div>
+          </div>
+        </article>
+
+        <article class="project-row">
+          <div class="project-content">
+            <h3>JavaScript Calculator</h3>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span>
+            </div>
+            <p>
+              Lightweight arithmetic calculator with clear expression handling and keyboard-friendly interactions,
+              designed for accuracy and speed.
+            </p>
+            <div class="project-actions">
+              <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View GitHub</a>
+              <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="btn-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="preview-window code-window">if (prompt === '+') {\n  console.log(a + b);\n} else {\n  console.log(a / b);\n}</div>
+          </div>
+        </article>
+
+        <article class="project-row reverse">
+          <div class="project-content">
+            <h3>SaaS Landing Page</h3>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <p>
+              Clean landing page built with CSS grid and flexbox to highlight product value, improve hierarchy, and keep
+              conversion-focused layout consistency.
+            </p>
+            <div class="project-actions">
+              <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View GitHub</a>
+              <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" class="btn-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="preview-window image-window">SaaS UI Preview</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="contact-tag">Contacts</p>
+          <h2>Have a project?<br />Let’s talk!</h2>
+          <a href="mailto:bhanucharankodimala@gmail.com" class="btn btn-primary">Start conversation</a>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required />
+          <small id="name-error" class="error"></small>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+          <small id="email-error" class="error"></small>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <small id="message-error" class="error"></small>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <p id="form-success" class="success" hidden>Thanks! Your message has been validated successfully.</p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <a href="#home" class="nav__logo footer__logo">
-        <span class="logo-bracket">&lt;</span>BK<span class="logo-bracket">/&gt;</span>
-      </a>
-      <p class="footer__copy">© <span id="year"></span> Bhanu Charan K. Crafted with <i class="fa-solid fa-heart"></i> &amp; ☕</p>
-      <div class="footer__social">
-        <a href="https://github.com/bhanukc21"   target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/in/bhanucharankodimala" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <div class="container footer-inner">
+      <p class="footer-name">Bhanu Charan</p>
+      <p class="footer-copy">Designed with love, all rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://github.com/bhanukc21" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/bhanucharankodimala" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:bhanucharankodimala@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </div>
   </footer>
-
-  <!-- Back to top -->
-  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
 
   <script src="script.js"></script>
 </body>
