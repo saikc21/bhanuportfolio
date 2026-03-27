@@ -48,7 +48,7 @@ const form = document.getElementById('contact-form');
 const successMessage = document.getElementById('form-success');
 
 const validators = {
-  name: (value) => value.trim().length >= 2 || 'Please enter at least 2 characters.',
+  name: (value) => value.trim().length >= 2 || 'Please enter your full name (min 2 characters).',
   email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) || 'Please enter a valid email address.',
   message: (value) => value.trim().length >= 10 || 'Message should be at least 10 characters.'
 };
